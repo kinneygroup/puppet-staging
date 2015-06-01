@@ -19,13 +19,13 @@ class staging (
 ) inherits staging::params {
 
   # Resolve conflict with pe_staging
-  if !defined(File[$path]) {
-    file { $path:
-      ensure => directory,
-      owner  => $owner,
-      group  => $group,
-      mode   => $mode,
-    }
-  }
+  #if !defined(File[$path]) {
+  #  file { $path:
+  #    ensure => directory,
+  #    owner  => $owner,
+  #    group  => $group,
+  #    mode   => $mode,
+  #  }
+  #}
 
 }
